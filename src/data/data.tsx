@@ -101,17 +101,15 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 /**
  * About section
  */
-export const aboutData: About = {
+ export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: ``,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
+    {label: 'Location', text: 'Los Angeles, CA', Icon: MapIcon},
+    {label: 'Age', text: '34', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'USA', Icon: FlagIcon},
+    {label: 'Interests', text: 'Snowboarding, Photography, Camping', Icon: SparklesIcon},
+    {label: 'Study', text: 'California Institute of Technology', Icon: AcademicCapIcon},
     // {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
   ],
 };
@@ -119,7 +117,7 @@ export const aboutData: About = {
 /**
  * Skills section
  */
-export const skills: SkillGroup[] = [
+ export const skills: SkillGroup[] = [
   {
     name: 'Spoken languages',
     skills: [
@@ -142,15 +140,19 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
+        level: 10,
+      },
+      {
+        name: 'Angular',
+        level: 10,
+      },
+      {
+        name: 'Vue',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
+        name: 'TailwindCss',
+        level: 9,
       },
     ],
   },
@@ -159,15 +161,19 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 8,
+        level: 10,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Django',
+        level: 9,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Laravel',
+        level: 10,
+      },
+      {
+        name: 'AWS',
+        level: 9,
       },
     ],
   },
@@ -180,11 +186,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Flutter',
-        level: 4,
+        level: 9,
       },
       {
         name: 'Swift',
-        level: 3,
+        level: 7,
       },
     ],
   },
@@ -193,138 +199,160 @@ export const skills: SkillGroup[] = [
 /**
  * Portfolio section
  */
-export const portfolioItems: PortfolioItem[] = [
+ export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Sky Store',
+    description: "Sky Store is an easy way to buy or rent the biggest blockbusters or all time classic movies whenever you want, any time, anywhere. I've worked with the back-end team in order to deliver a flexible and scalable platform that is used by multiple types of devices.",
+    url: 'https://www.skystore.com/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'MyCurrencyTransfer',
+    description: 'Currency transfer and exchange rate comparisons. Technologies used include Ruby 2.0, Rails API 4.0, BDD, Capistrano, Sidekiq messaging and workers, and MySQL.',
+    url: 'http://www.mycurrencytransfer.com/',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Farm4Trade',
+    description: 'A mobile platform to connect farmers and breeders to improve farming production and trading systems. Used the MEAN stack (MongoDB, Express, AngularJS, and Node.js), Ionic framework, Chef, Redis, and PhoneGap.',
+    url: 'http://farm4trade.com/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Ferrari',
+    description: "This site features cloud infrastructure design for all web properties of the group. The scope of the project was the migration from classic hosting to a multi-zone cloud environment.We chose Amazon AWS and we redesigned apps to take advantage of all AWS components like computational instances, dedicated databases, load balancers, Memcached servers,and CDN, along with PHP optimizations. Load tests demonstrated good results, with >80% savings on starting costs. Nowadays, the infrastructure is composed by several EC2 instances and several RDS instances in multi-zone + multi-read replicas. We increased the total number of instances up to 200. The infrastructure also takes advantage of Amazon S3 and CloudFront.",
+    url: 'http://ferrari.com/',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'DocSpring ',
+    description: 'I built the DocSpring web application with Ruby on Rails and React. DocSpring provides a PDF generation API for developers. I also built automatic web form generation, e-signatures, and many other features.',
+    url: 'https://docspring.com',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'SudoBlock',
+    description: 'I built a mobile game using React Native (one codebase for iPhone, Android, Windows, and web).',
+    url: 'https://sudoblock.com/',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Race for MVP',
+    description: 'A data-driven dashboard built with D3 and CSS3. User Profiles are updated based on dragging stat sliders. Shows the number of relevant games in statistical thresholds. Presets for different relevant statistical combinations. Graphs the represent individual games versus season average. Filtering and graph updates highlight piece.',
+    url: 'http://raceformvp.com/',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'NYC Street Dangers',
+    description: 'Using SVG, Leaflet, SVG, CSS, R, and JavaScript, I cleaned and analyzed data to create this visualization of car accidents in NYC. We attempted to show the most dangerous areas of NYC.',
+    url: 'http://admin.1point21interactive.com/nyc-streets/',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Downeast Capital',
+    description: 'A SPA (single-page application) website for a private mortgage company. It utilizes serverless hosting using AWS S3, CloudFront, Lambda, Route53, and SES. It was developed using Vue.js, Vuex, Vuetify.js, and Nuxt.js.',
+    url: 'https://downeastcapital.com/',
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'QuoteManagement System',
+    description: 'I joined this company when they had a proof-of-concept SPA written with the first version of React, after Facebook had just released it. My duty was to fix bugs and add new features. As the product evolved, I realized that the current architecture is no longer extendable and proposed that we rewrite it using the modern React patterns, such as Redux and Router. I architected the new product, making it more robust and easily extendable. The addition of Redux allowed us to have all the data in one place and add unit tests. After this success, I was asked to develop two more applications for them, a kitchen visualizer with real-time updates based on user selection of the granite, and a back-end dashboard for the fabricators. Both projects were delivered in time.',
+    url: 'http://demo.quotecountertops.com/kv',
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'GIS Analysis Software',
+    description: 'I developed a production site analysis software for doctors. After choosing a location, a doctor can see how many people live in the vicinity and other details about them. The front end is built with Vue.js, and the back end with Node.js is hosted on an EC2 instance. For the database, I used RDS with PostgreSQL.',
+    url: 'https://smartmap.at/',
     image: porfolioImage11,
   },
 ];
 
+
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
+
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
+    date: 'April 2006 - August 2010',
+    location: 'California Institute of Technology',
+    title: 'Bachelor of Computer Science',
+    content: <p></p>,
+  }
 ];
-
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2018 - July 2021',
+    location: 'Newforma',
+    title: 'Senior Full-Stack Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div>
+        <ul className='list-disc'>
+          <li>Created a continuous deployment workflow using Docker, Heroku, and Nginx.</li>
+          <li>Converted the starting Node/React project into a production-ready solution using Docker, Heroku, and AWS.</li>
+          <li>Developed with serverless Node.js and JavaScript.</li>
+          <li>Used Elastic search to support indexing and search for various documents.</li>
+          <li>Worked on a distributed team that operated under an Agile methodology.</li>
+          <li>Deployed the ode to AWS using Cloud Formation and monitored such uisng CloudWatch and X-Ray.</li>
+        </ul>
+      </div>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'May 2015 - July 2017',
+    location: 'GAIN Fitness',
+    title: 'Front-end Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <div>
+        <ul className='list-disc'>
+          <li>Created the admin application of the web store in React.</li>
+          <li>Replaced Redux with Apollo Client for GraphQl against a Node back-end.</li>
+          <li>Created a HOC architecture to reuse common GraphQL functionality for listing and filtering.</li>
+          <li>Created our own custom UI library with styled components.</li>
+          <li>Used HOC for form manipulation.</li>
+        </ul>
+      </div>
     ),
   },
+  {
+    date: 'June 2011 - September 2014',
+    location: 'GeneCentrix',
+    title: 'Software Engineer',
+    content: (
+      <div>
+        <ul className='list-disc'>
+          <li>Built single-page web applications using AngularJS and Google Closure.</li>
+          <li>Created scalable back-ends serving RESTful APIs with Python, Go and Java.</li>
+          <li>Developed big data pipelines.</li>
+          <li>Wrote a Chrome extension for troubleshooting Google Analytics deployments.</li>
+          <li>Integrated and conducted end-to-end and performance stress testing of the built tools.</li>
+        </ul>
+      </div>
+    ),
+  }
 ];
 
 /**
  * Testimonial section
  */
-export const testimonial: TestimonialSection = {
+ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
       name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      text: "Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.",
+      //image: testimonal1,
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Linda Allbright',
+      text: 'I chose Richard because we received great customer service from the first inquiry, he is very professional, the work agreement is reassuring, and the testimonials on the website were good. Overall, a very professional experience, great process, and really friendly and committed  developer.',
+      //image: testimonal2,
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Damion Sinclair',
+      text: 'I continue to be impressed with your ability to run such a polished and professional application. The application and the ongoing support and improvements have allowed us to successfully introduce the product in a very competitive market. The data that it provides is used to make investment decisions and to help manage the safety and soundness of US banks. I’m proud of what you’ve created and I sincerely thank you.',
+      //image: testimonal3,
     },
   ],
 };
