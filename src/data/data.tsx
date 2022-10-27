@@ -6,6 +6,7 @@ import {
   MapIcon,
   // OfficeBuildingIcon,
   SparklesIcon,
+  LocationMarkerIcon
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -364,38 +365,39 @@ export const experience: TimelineItem[] = [
  * Contact section
  */
 
-export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
-  items: [
-    {
-      type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
-    },
-    {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
-    },
-    {
-      type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
-    },
-  ],
-};
+// export const contact: ContactSection = {
+//   headerText: 'Get in touch.',
+//   description: 'If you have a project idea in mind, please get in touch.I will be happy to discuss ideas with you and how we can work together.',
+//   items: [
+//     // {
+//     //   type: ContactType.Email,
+//     //   text: 'reachout@timbaker.me',
+//     //   href: 'mailto:reachout@timbaker.me',
+//     // },
+//     // {
+//     //   type: ContactType.Location,
+//     //   text: 'Victoria BC, Canada',
+//     //   href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+//     // },
+//     // {
+//     //   type: ContactType.Instagram,
+//     //   text: '@tbakerx',
+//     //   href: 'https://www.instagram.com/tbakerx/',
+//     // },
+//     // {
+//     //   type: ContactType.Github,
+//     //   text: 'tbakerx',
+//     //   href: 'https://github.com/Apollo-111',
+//     // },
+//   ],
+// };
 
 /**
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Apollo-111'},
+  {label: 'Location', Icon: LocationMarkerIcon, href: 'https://www.google.com/maps/place/Los+Angeles,+CA,+USA/'},
   // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   // {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
