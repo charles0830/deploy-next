@@ -25,6 +25,9 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.png';
 import porfolioImage9 from '../images/portfolio/portfolio-9.png';
 import porfolioImage10 from '../images/portfolio/portfolio-10.png';
 import porfolioImage11 from '../images/portfolio/portfolio-11.png';
+import testimonal1 from '../images/portfolio/t-1.png';
+import testimonal2 from '../images/portfolio/t-2.png';
+import testimonal3 from '../images/portfolio/t-3.png';
 import profilepic from '../images/me.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -342,17 +345,17 @@ export const experience: TimelineItem[] = [
     {
       name: 'John Doe',
       text: "Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.",
-      //image: testimonal1,
+      image: testimonal1,
     },
     {
       name: 'Linda Allbright',
       text: 'I chose Richard because we received great customer service from the first inquiry, he is very professional, the work agreement is reassuring, and the testimonials on the website were good. Overall, a very professional experience, great process, and really friendly and committed  developer.',
-      //image: testimonal2,
+      image: testimonal2,
     },
     {
       name: 'Damion Sinclair',
       text: 'I continue to be impressed with your ability to run such a polished and professional application. The application and the ongoing support and improvements have allowed us to successfully introduce the product in a very competitive market. The data that it provides is used to make investment decisions and to help manage the safety and soundness of US banks. I’m proud of what you’ve created and I sincerely thank you.',
-      //image: testimonal3,
+      image: testimonal3,
     },
   ],
 };
