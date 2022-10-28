@@ -37,7 +37,7 @@ jobs:
         run: yarn next build
 
       - name: export my App
-        run: yarn run export
+        run: yarn export
 
       - name: touch my App
         run: touch ./out/.nojekyll

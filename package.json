@@ -1,5 +1,4 @@
 {
-  "homepage": "http://Apollo-111.github.io/portfolio",
   "name": "personal-site",
   "version": "2.0.0",
   "private": true,
@@ -11,8 +10,7 @@
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "start": "yarn next start",
     "sitemap": "yarn next-sitemap",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "export": "next export"
   },
   "dependencies": {
     "@headlessui/react": "^1.5.0",
@@ -65,6 +63,5 @@
   },
   "resolutions": {
     "autoprefixer": "10.4.5"
-  },
-  "export": "next export"
+  }
 }
