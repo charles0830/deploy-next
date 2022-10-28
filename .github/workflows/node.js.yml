@@ -22,8 +22,11 @@ jobs:
       - name: Installing my packages
         run: npm install
 
+      - name: Setup yarn
+        run: npm install -g yarn
+
       - name: Build my App
-        run: npm run build && npm run export && touch ./out/.nojekyll
+        run: yarn compile && yarn next build && yarn run export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
