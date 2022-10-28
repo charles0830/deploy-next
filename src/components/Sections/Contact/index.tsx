@@ -37,15 +37,15 @@ const Contact: FC = memo(() => {
             <ContactForm />
           </div> */}
           <div className="order-1 col-span-1 flex flex-col gap-y-4 md:order-2">
-            <p className="prose leading-6 text-neutral-300 italic bold">
-              If you have a project idea in mind, please get in touch to  
-              <strong className="text-stone-100 text-2xl"> fran76062@gmail.com</strong>
+            <p className="bold prose italic leading-6 text-neutral-300">
+              If you have a project idea in mind, please get in touch to
+              <strong className="text-2xl text-stone-100"> fran76062@gmail.com</strong>
             </p>
-            <p className="prose leading-6 text-neutral-300 italic">
+            <p className="prose italic leading-6 text-neutral-300">
               I will be happy to discuss ideas with you and how we can work together.
             </p>
-            <a href='mailto:fran76062@gmail.com'>
-            <button
+            <a href="mailto:fran76062@gmail.com">
+              <button
                 aria-label="Submit contact form"
                 className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
                 type="submit">

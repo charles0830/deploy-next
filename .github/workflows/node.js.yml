@@ -26,9 +26,24 @@ jobs:
         run: npm install -g yarn
       - name: Setup typescript
         run: npm install typescript
-        
+
       - name: Build my App
         run: yarn compile && yarn next build && yarn run export && touch ./out/.nojekyll
+
+      - name: compile my App
+        run: yarn compile
+
+      - name: lint my App
+        run: yarn lint -- --fix
+
+      - name: build my App
+        run: yarn next build
+
+      - name: export my App
+        run: yarn run export
+
+      - name: touch my App
+        run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1

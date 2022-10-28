@@ -3,10 +3,10 @@ import {
   CalendarIcon,
   // DownloadIcon,
   FlagIcon,
+  LocationMarkerIcon,
   MapIcon,
   // OfficeBuildingIcon,
   SparklesIcon,
-  LocationMarkerIcon
 } from '@heroicons/react/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -15,6 +15,7 @@ import GithubIcon from '../components/Icon/GithubIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
+import profilepic from '../images/me.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.png';
 import porfolioImage2 from '../images/portfolio/portfolio-2.png';
 import porfolioImage3 from '../images/portfolio/portfolio-3.png';
@@ -29,7 +30,6 @@ import porfolioImage11 from '../images/portfolio/portfolio-11.png';
 import testimonal1 from '../images/portfolio/t-1.png';
 import testimonal2 from '../images/portfolio/t-2.png';
 import testimonal3 from '../images/portfolio/t-3.png';
-import profilepic from '../images/me.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -71,19 +71,20 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 /**
  * Hero section
  */
- export const heroData: Hero = {
+export const heroData: Hero = {
   imageSrc: heroImage,
   name: `I'm Richard Frank.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      <strong className="text-stone-100">Seasoned  Full-Stack Developer</strong> with over <strong className="text-stone-200">10 years</strong> of experience 
-      creating highly maintainable software products with test automation experience.
+        <strong className="text-stone-100">Seasoned Full-Stack Developer</strong> with over{' '}
+        <strong className="text-stone-200">10 years</strong> of experience creating highly maintainable software
+        products with test automation experience.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      Thanks to <strong className="text-stone-100">Great Communication Skills</strong> and a
-      <strong className="text-stone-100"> Keen Eye for specification analysis</strong>, 
-      I delivers <strong className="text-stone-100">bug-free solutions</strong> that 100% meet the client's requirements.
+        Thanks to <strong className="text-stone-100">Great Communication Skills</strong> and a
+        <strong className="text-stone-100"> Keen Eye for specification analysis</strong>, I delivers{' '}
+        <strong className="text-stone-100">bug-free solutions</strong> that 100% meet the client's requirements.
       </p>
     </>
   ),
@@ -105,7 +106,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 /**
  * About section
  */
- export const aboutData: About = {
+export const aboutData: About = {
   profileImageSrc: profilepic,
   description: ``,
   aboutItems: [
@@ -121,7 +122,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 /**
  * Skills section
  */
- export const skills: SkillGroup[] = [
+export const skills: SkillGroup[] = [
   {
     name: 'Spoken languages',
     skills: [
@@ -203,34 +204,39 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
 /**
  * Portfolio section
  */
- export const portfolioItems: PortfolioItem[] = [
+export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Sky Store',
-    description: "Sky Store is an easy way to buy or rent the biggest blockbusters or all time classic movies whenever you want, any time, anywhere. I've worked with the back-end team in order to deliver a flexible and scalable platform that is used by multiple types of devices.",
+    description:
+      "Sky Store is an easy way to buy or rent the biggest blockbusters or all time classic movies whenever you want, any time, anywhere. I've worked with the back-end team in order to deliver a flexible and scalable platform that is used by multiple types of devices.",
     url: 'https://www.skystore.com/',
     image: porfolioImage1,
   },
   {
     title: 'MyCurrencyTransfer',
-    description: 'Currency transfer and exchange rate comparisons. Technologies used include Ruby 2.0, Rails API 4.0, BDD, Capistrano, Sidekiq messaging and workers, and MySQL.',
+    description:
+      'Currency transfer and exchange rate comparisons. Technologies used include Ruby 2.0, Rails API 4.0, BDD, Capistrano, Sidekiq messaging and workers, and MySQL.',
     url: 'http://www.mycurrencytransfer.com/',
     image: porfolioImage2,
   },
   {
     title: 'Farm4Trade',
-    description: 'A mobile platform to connect farmers and breeders to improve farming production and trading systems. Used the MEAN stack (MongoDB, Express, AngularJS, and Node.js), Ionic framework, Chef, Redis, and PhoneGap.',
+    description:
+      'A mobile platform to connect farmers and breeders to improve farming production and trading systems. Used the MEAN stack (MongoDB, Express, AngularJS, and Node.js), Ionic framework, Chef, Redis, and PhoneGap.',
     url: 'http://farm4trade.com/',
     image: porfolioImage3,
   },
   {
     title: 'Ferrari',
-    description: "This site features cloud infrastructure design for all web properties of the group. The scope of the project was the migration from classic hosting to a multi-zone cloud environment.We chose Amazon AWS and we redesigned apps to take advantage of all AWS components like computational instances, dedicated databases, load balancers, Memcached servers,and CDN, along with PHP optimizations. Load tests demonstrated good results, with >80% savings on starting costs. Nowadays, the infrastructure is composed by several EC2 instances and several RDS instances in multi-zone + multi-read replicas. We increased the total number of instances up to 200. The infrastructure also takes advantage of Amazon S3 and CloudFront.",
+    description:
+      'This site features cloud infrastructure design for all web properties of the group. The scope of the project was the migration from classic hosting to a multi-zone cloud environment.We chose Amazon AWS and we redesigned apps to take advantage of all AWS components like computational instances, dedicated databases, load balancers, Memcached servers,and CDN, along with PHP optimizations. Load tests demonstrated good results, with >80% savings on starting costs. Nowadays, the infrastructure is composed by several EC2 instances and several RDS instances in multi-zone + multi-read replicas. We increased the total number of instances up to 200. The infrastructure also takes advantage of Amazon S3 and CloudFront.',
     url: 'http://ferrari.com/',
     image: porfolioImage4,
   },
   {
     title: 'DocSpring ',
-    description: 'I built the DocSpring web application with Ruby on Rails and React. DocSpring provides a PDF generation API for developers. I also built automatic web form generation, e-signatures, and many other features.',
+    description:
+      'I built the DocSpring web application with Ruby on Rails and React. DocSpring provides a PDF generation API for developers. I also built automatic web form generation, e-signatures, and many other features.',
     url: 'https://docspring.com',
     image: porfolioImage5,
   },
@@ -242,36 +248,40 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
   },
   {
     title: 'Race for MVP',
-    description: 'A data-driven dashboard built with D3 and CSS3. User Profiles are updated based on dragging stat sliders. Shows the number of relevant games in statistical thresholds. Presets for different relevant statistical combinations. Graphs the represent individual games versus season average. Filtering and graph updates highlight piece.',
+    description:
+      'A data-driven dashboard built with D3 and CSS3. User Profiles are updated based on dragging stat sliders. Shows the number of relevant games in statistical thresholds. Presets for different relevant statistical combinations. Graphs the represent individual games versus season average. Filtering and graph updates highlight piece.',
     url: 'http://raceformvp.com/',
     image: porfolioImage7,
   },
   {
     title: 'NYC Street Dangers',
-    description: 'Using SVG, Leaflet, SVG, CSS, R, and JavaScript, I cleaned and analyzed data to create this visualization of car accidents in NYC. We attempted to show the most dangerous areas of NYC.',
+    description:
+      'Using SVG, Leaflet, SVG, CSS, R, and JavaScript, I cleaned and analyzed data to create this visualization of car accidents in NYC. We attempted to show the most dangerous areas of NYC.',
     url: 'http://admin.1point21interactive.com/nyc-streets/',
     image: porfolioImage8,
   },
   {
     title: 'Downeast Capital',
-    description: 'A SPA (single-page application) website for a private mortgage company. It utilizes serverless hosting using AWS S3, CloudFront, Lambda, Route53, and SES. It was developed using Vue.js, Vuex, Vuetify.js, and Nuxt.js.',
+    description:
+      'A SPA (single-page application) website for a private mortgage company. It utilizes serverless hosting using AWS S3, CloudFront, Lambda, Route53, and SES. It was developed using Vue.js, Vuex, Vuetify.js, and Nuxt.js.',
     url: 'https://downeastcapital.com/',
     image: porfolioImage9,
   },
   {
     title: 'QuoteManagement System',
-    description: 'I joined this company when they had a proof-of-concept SPA written with the first version of React, after Facebook had just released it. My duty was to fix bugs and add new features. As the product evolved, I realized that the current architecture is no longer extendable and proposed that we rewrite it using the modern React patterns, such as Redux and Router. I architected the new product, making it more robust and easily extendable. The addition of Redux allowed us to have all the data in one place and add unit tests. After this success, I was asked to develop two more applications for them, a kitchen visualizer with real-time updates based on user selection of the granite, and a back-end dashboard for the fabricators. Both projects were delivered in time.',
+    description:
+      'I joined this company when they had a proof-of-concept SPA written with the first version of React, after Facebook had just released it. My duty was to fix bugs and add new features. As the product evolved, I realized that the current architecture is no longer extendable and proposed that we rewrite it using the modern React patterns, such as Redux and Router. I architected the new product, making it more robust and easily extendable. The addition of Redux allowed us to have all the data in one place and add unit tests. After this success, I was asked to develop two more applications for them, a kitchen visualizer with real-time updates based on user selection of the granite, and a back-end dashboard for the fabricators. Both projects were delivered in time.',
     url: 'http://demo.quotecountertops.com/kv',
     image: porfolioImage10,
   },
   {
     title: 'GIS Analysis Software',
-    description: 'I developed a production site analysis software for doctors. After choosing a location, a doctor can see how many people live in the vicinity and other details about them. The front end is built with Vue.js, and the back end with Node.js is hosted on an EC2 instance. For the database, I used RDS with PostgreSQL.',
+    description:
+      'I developed a production site analysis software for doctors. After choosing a location, a doctor can see how many people live in the vicinity and other details about them. The front end is built with Vue.js, and the back end with Node.js is hosted on an EC2 instance. For the database, I used RDS with PostgreSQL.',
     url: 'https://smartmap.at/',
     image: porfolioImage11,
   },
 ];
-
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
@@ -283,7 +293,7 @@ export const education: TimelineItem[] = [
     location: 'California Institute of Technology',
     title: 'Bachelor of Computer Science',
     content: <p></p>,
-  }
+  },
 ];
 export const experience: TimelineItem[] = [
   {
@@ -292,9 +302,11 @@ export const experience: TimelineItem[] = [
     title: 'Senior Full-Stack Developer',
     content: (
       <div>
-        <ul className='list-disc'>
+        <ul className="list-disc">
           <li>Created a continuous deployment workflow using Docker, Heroku, and Nginx.</li>
-          <li>Converted the starting Node/React project into a production-ready solution using Docker, Heroku, and AWS.</li>
+          <li>
+            Converted the starting Node/React project into a production-ready solution using Docker, Heroku, and AWS.
+          </li>
           <li>Developed with serverless Node.js and JavaScript.</li>
           <li>Used Elastic search to support indexing and search for various documents.</li>
           <li>Worked on a distributed team that operated under an Agile methodology.</li>
@@ -309,7 +321,7 @@ export const experience: TimelineItem[] = [
     title: 'Front-end Engineer',
     content: (
       <div>
-        <ul className='list-disc'>
+        <ul className="list-disc">
           <li>Created the admin application of the web store in React.</li>
           <li>Replaced Redux with Apollo Client for GraphQl against a Node back-end.</li>
           <li>Created a HOC architecture to reuse common GraphQL functionality for listing and filtering.</li>
@@ -325,7 +337,7 @@ export const experience: TimelineItem[] = [
     title: 'Software Engineer',
     content: (
       <div>
-        <ul className='list-disc'>
+        <ul className="list-disc">
           <li>Built single-page web applications using AngularJS and Google Closure.</li>
           <li>Created scalable back-ends serving RESTful APIs with Python, Go and Java.</li>
           <li>Developed big data pipelines.</li>
@@ -334,18 +346,18 @@ export const experience: TimelineItem[] = [
         </ul>
       </div>
     ),
-  }
+  },
 ];
 
 /**
  * Testimonial section
  */
- export const testimonial: TestimonialSection = {
+export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
       name: 'John Doe',
-      text: "Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.",
+      text: 'Not only was Ian’s work on-time and to spec, he pays attention to improve the aesthetics of the site as well as the functionality. Throughout the entire process he is responsive, and willing to work through issues as they arise. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.',
       image: testimonal1,
     },
     {
