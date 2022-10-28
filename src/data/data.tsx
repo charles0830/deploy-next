@@ -33,8 +33,8 @@ import profilepic from '../images/me.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
-  ContactSection,
-  ContactType,
+  // ContactSection,
+  // ContactType,
   Hero,
   HomepageMeta,
   PortfolioItem,
