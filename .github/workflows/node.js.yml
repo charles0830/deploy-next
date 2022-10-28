@@ -20,7 +20,7 @@ jobs:
           node-version: '14.x'
 
       - name: Installing my packages
-        run: npm ci
+        run: npm install
 
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
