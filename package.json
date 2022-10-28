@@ -65,5 +65,6 @@
   },
   "resolutions": {
     "autoprefixer": "10.4.5"
-  }
+  },
+  "export": "next export"
 }
