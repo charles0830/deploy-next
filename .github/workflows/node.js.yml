@@ -24,7 +24,9 @@ jobs:
 
       - name: Setup yarn
         run: npm install -g yarn
-
+      - name: Setup typescript
+        run: npm install typescript
+        
       - name: Build my App
         run: yarn compile && yarn next build && yarn run export && touch ./out/.nojekyll
 
